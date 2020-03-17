@@ -1,0 +1,78 @@
+:root{
+    --form-label-font-size: 1.2rem;
+    --form-input-background-color: hsl(var(--color-base-hue), 100%, 31%);
+    --form-input-border-color: hsl(var(--color-base-hue), 100%, 50%);
+    --form-input-border-color-light: hsl(var(--color-base-hue), 100%, 80%);
+}
+
+.form-row{
+    display: flex !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.form-item{
+    display: flex !important;
+    flex-direction: column !important;
+    margin-left: 2rem !important;
+    flex-grow: 1 !important;
+    flex-basis: 0 !important;
+}
+
+.form-item:first-child{
+    margin-left: 0 !important;
+}
+
+.form-item-no-grow{
+    flex-grow: 0 !important;
+}
+
+.form-row-end{
+    justify-content: flex-end !important;
+}
+
+.form-item > label{
+    font-size: var(--form-label-font-size) !important;
+    margin-bottom: 0.25rem !important;
+    margin-left: 0.25rem !important;
+}
+
+.form-item input, .form-item select, .form-item textarea{
+    height: 2rem !important;
+    padding: 0.25rem 0.5rem !important;
+    border-radius: 0.25rem !important;
+    border: 1px solid var(--form-input-border-color) !important;
+    background-color: var(--form-input-background-color) !important;
+    color: var(--color-text-light) !important;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+    font-family: 'Gotham Rounded' !important;
+    outline: none !important;
+}
+
+.form-item textarea{
+    height: 100% !important;
+    resize: none !important;
+}
+
+.form-item select option{
+    background-color: black !important;
+}
+
+.form-item input:focus, .form-item select:focus, .form-item textarea:focus{
+    border-color: var(--form-input-border-color-light) !important;
+}
+
+.filepond--root{
+    font-family: 'Gotham Rounded' !important;
+    margin-bottom: 0 !important;
+}
+
+.filepond--panel-root{
+    background-color: var(--form-input-background-color) !important;
+    border: 1px solid var(--form-input-border-color) !important;
+}
+
+.filepond--drop-label{
+    color: var(--color-text-light) !important;
+    font-size: inherit !important;
+}
