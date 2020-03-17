@@ -1,0 +1,55 @@
+:root{
+    --color-btn-primary-background: hsl(var(--color-base-hue), 100%, 83%);
+    --color-btn-primary-background-dark: hsl(var(--color-base-hue), 100%, 73%);
+    --color-btn-primary-text: hsl(var(--color-base-hue), 100%, 20%);
+    --color-btn-primary-text-dark: hsl(var(--color-base-hue), 100%, 10%);
+    --color-btn-border: black;
+    --color-btn-danger-background: hsl(var(--color-danger-hue), 100%, 83%);
+    --color-btn-danger-background-dark: hsl(var(--color-danger-hue), 100%, 73%);
+    --color-btn-danger-text: black;
+    --color-btn-danger-text-dark: black;
+}
+
+.btn{
+    border: 1px solid var(--color-btn-border) !important;
+    border-radius: .5rem !important;
+    padding: .5rem 1rem !important;
+    font-size: 1.2rem !important;
+    font-family: 'Gotham Rounded' !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    text-align: center !important;
+}
+
+.btn-row{
+    display: flex !important;
+    align-items: flex-start !important;
+}
+
+.btn-row > *{
+    margin-left: 1rem !important;
+}
+
+.btn-row > *:first-child{
+    margin-left: 0 !important;
+}
+
+.btn-primary{
+    color: var(--color-btn-primary-text) !important;
+    background-color: var(--color-btn-primary-background) !important;
+}
+
+.btn-primary:hover{
+    color: var(--color-btn-primary-text-dark) !important;
+    background-color: var(--color-btn-primary-background-dark) !important;
+}
+
+.btn-danger{
+    color: var(--color-btn-danger-text) !important;
+    background-color: var(--color-btn-danger-background) !important;
+}
+
+.btn-danger:hover{
+    color: var(--color-btn-danger-text-dark) !important;
+    background-color: var(--color-btn-danger-background-dark) !important;
+}

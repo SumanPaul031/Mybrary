@@ -1,0 +1,41 @@
+:root{
+    --nav-title-font-size: 3rem;
+    --nav-title-font-weight: bold;
+    --nav-link-font-weight: 300;
+}
+
+.header-title{
+    color: var(--color-text-light);
+    text-decoration: none !important;
+    font-size: var(--nav-title-font-size) !important;
+    font-weight: var(--nav-title-font-weight) !important;
+}
+
+.header-nav{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 5rem !important;
+}
+
+.header-nav ul{
+    display: flex !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.header-nav li{
+    list-style: none !important;
+}
+
+.header-nav li a{
+    text-decoration: none !important;
+    color: var(--color-text-light) !important;
+    font-weight: var(--nav-link-font-weight) !important;
+    padding: 1rem !important;
+}
+
+.header-nav li a:hover, .header-title:hover{
+    color: white !important;
+}
